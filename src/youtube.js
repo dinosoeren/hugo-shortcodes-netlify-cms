@@ -6,7 +6,7 @@ CMS.registerEditorComponent({
         label: "Youtube Video ID",
         widget: "string"
     }],
-    pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+>}}/,
+    pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-_]+)\s+>}}/,
     fromBlock: function(match) {
         return {
             id: match[1],
