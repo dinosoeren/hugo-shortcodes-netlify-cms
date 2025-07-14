@@ -5,54 +5,67 @@ CMS.registerEditorComponent({
         name: "title",
         label: "Title",
         widget: "string",
+        required: false
     }, {
         name: "alt",
         label: "Description",
-        widget: "string"
+        widget: "string",
+        required: false
     }, {
         name: "src",
         label: "Image",
-        widget: "image"
+        widget: "image",
+        required: true
     }, {
         name: "width",
         label: "Width",
-        widget: "number"
+        widget: "number",
+        required: false
     }, {
         name: "height",
         label: "Height",
-        widget: "number"
+        widget: "number",
+        required: false
     }, {
         name: "loading",
         label: "Loading",
-        widget: "string"
+        widget: "string",
+        required: false
     }, {
         name: "class",
         label: "Class",
-        widget: "string"
+        widget: "string",
+        required: false
     }, {
         name: "link",
         label: "Link",
-        widget: "string"
+        widget: "string",
+        required: false
     }, {
         name: "target",
         label: "Target",
-        widget: "string"
+        widget: "string",
+        required: false
     }, {
         name: "rel",
         label: "Rel",
-        widget: "string"
+        widget: "string",
+        required: false
     }, {
         name: "caption",
         label: "Caption",
-        widget: "text"
+        widget: "text",
+        required: false
     }, {
         name: "attr",
         label: "Attribution",
-        widget: "string"
+        widget: "string",
+        required: false
     }, {
         name: "attrlink",
         label: "Attribution Link",
-        widget: "string"
+        widget: "string",
+        required: false
     }],
     pattern: /{{<\s*figure(.*)>}}/,
     fromBlock: function (input) {
