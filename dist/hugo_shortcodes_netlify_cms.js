@@ -8,7 +8,7 @@ CMS.registerEditorComponent({
         required: false
     }, {
         name: "alt",
-        label: "Description",
+        label: "Alt text",
         widget: "string",
         required: false
     }, {
